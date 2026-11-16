@@ -1,0 +1,332 @@
+{
+  "kit": "red-extraction-hud-icons",
+  "version": "1.0",
+  "tbl_index_note": "0-based position of the $Name entry in stock weapons.tbl (tables.vpp), i.e. the weapon type index",
+  "files": {
+    "weapon_wide": "weapons/wide/{W}x{H}/{icon}.{ext}",
+    "weapon_square": "weapons/square/{N}/{icon}.{ext}",
+    "ammo": "ammo/{N}/{ammo_icon}.{ext}",
+    "wide_sizes": [
+      "128x64",
+      "256x128",
+      "512x256"
+    ],
+    "square_sizes": [
+      64,
+      128,
+      256
+    ],
+    "formats": [
+      "png",
+      "tga"
+    ]
+  },
+  "wheel": {
+    "segments": 8,
+    "segment_0_centre_deg": 0,
+    "direction": "clockwise from 12 o'clock",
+    "segment_span_deg": 45,
+    "outer_radius": 0.47,
+    "inner_radius": 0.25,
+    "disc_radius": 0.16,
+    "pointer_tip_radius": 0.238,
+    "radii_note": "fractions of the wheel canvas side; centre at canvas centre",
+    "group_to_segment": "segment = wheel_group - 1"
+  },
+  "weapons": [
+    {
+      "icon": "riot_stick",
+      "tbl_name": "Riot Stick",
+      "tbl_index": 2,
+      "display_name": "Control Baton",
+      "display_xstr": 299,
+      "ammo_icon": "ammo_riot_stick",
+      "wheel_group": 1,
+      "bar_order": 1,
+      "render": {
+        "mesh": "weapon_riotstick.v3m",
+        "yaw": 0.0,
+        "pitch": -0.05,
+        "zoom": 0.95,
+        "rotate_ccw": 90
+      }
+    },
+    {
+      "icon": "riot_shield",
+      "tbl_name": "riot shield",
+      "tbl_index": 13,
+      "display_name": "Riot Shield",
+      "display_xstr": 320,
+      "ammo_icon": null,
+      "wheel_group": 1,
+      "bar_order": 2,
+      "render": {
+        "mesh": "weapon_riotshield.v3m",
+        "yaw": 0.8,
+        "pitch": -0.42,
+        "zoom": 0.95,
+        "rotate_ccw": 0
+      }
+    },
+    {
+      "icon": "12mm_handgun",
+      "tbl_name": "12mm handgun",
+      "tbl_index": 3,
+      "display_name": "12mm pistol",
+      "display_xstr": 301,
+      "ammo_icon": "ammo_12mm_handgun",
+      "wheel_group": 2,
+      "bar_order": 3,
+      "render": {
+        "mesh": "weapon_ultorgun.v3m",
+        "yaw": 4.7124,
+        "pitch": -0.05,
+        "zoom": 0.95,
+        "rotate_ccw": 0
+      }
+    },
+    {
+      "icon": "machine_pistol",
+      "tbl_name": "Machine Pistol",
+      "tbl_index": 9,
+      "display_name": "Submachine Gun",
+      "display_xstr": 313,
+      "ammo_icon": "ammo_12mm_handgun",
+      "wheel_group": 2,
+      "bar_order": 4,
+      "render": {
+        "mesh": "weapon_machinep.v3m",
+        "yaw": 4.7124,
+        "pitch": -0.05,
+        "zoom": 0.95,
+        "rotate_ccw": 0
+      }
+    },
+    {
+      "icon": "shotgun",
+      "tbl_name": "Shotgun",
+      "tbl_index": 5,
+      "display_name": "Automatic Shotgun",
+      "display_xstr": 305,
+      "ammo_icon": "ammo_shotgun",
+      "wheel_group": 3,
+      "bar_order": 5,
+      "render": {
+        "mesh": "weapon_shotgun.v3m",
+        "yaw": 4.7124,
+        "pitch": -0.05,
+        "zoom": 0.95,
+        "rotate_ccw": 0
+      }
+    },
+    {
+      "icon": "assault_rifle",
+      "tbl_name": "Assault Rifle",
+      "tbl_index": 8,
+      "display_name": "Assault Rifle",
+      "display_xstr": 311,
+      "ammo_icon": "ammo_assault_rifle",
+      "wheel_group": 4,
+      "bar_order": 6,
+      "render": {
+        "mesh": "Weapon_Aslt_Rifle.v3m",
+        "yaw": 4.7124,
+        "pitch": -0.05,
+        "zoom": 0.95,
+        "rotate_ccw": 0
+      }
+    },
+    {
+      "icon": "precision_rifle",
+      "tbl_name": "scope_assault_rifle",
+      "tbl_index": 16,
+      "display_name": "Precision Rifle",
+      "display_xstr": 326,
+      "ammo_icon": "ammo_precision_rifle",
+      "wheel_group": 4,
+      "bar_order": 7,
+      "render": {
+        "mesh": "Weapon_Aslt_Rifle2.v3m",
+        "yaw": 4.7124,
+        "pitch": -0.05,
+        "zoom": 0.95,
+        "rotate_ccw": 0
+      }
+    },
+    {
+      "icon": "heavy_machine_gun",
+      "tbl_name": "heavy_machine_gun",
+      "tbl_index": 15,
+      "display_name": "Heavy Machine Gun",
+      "display_xstr": 324,
+      "ammo_icon": "ammo_heavy_machine_gun",
+      "wheel_group": 5,
+      "bar_order": 8,
+      "render": {
+        "mesh": "Weapon_HeavyMGunB.v3m",
+        "yaw": 4.7124,
+        "pitch": -0.05,
+        "zoom": 0.95,
+        "rotate_ccw": 0
+      }
+    },
+    {
+      "icon": "flamethrower",
+      "tbl_name": "Flamethrower",
+      "tbl_index": 12,
+      "display_name": "Flamethrower",
+      "display_xstr": 318,
+      "ammo_icon": "ammo_flamethrower",
+      "wheel_group": 5,
+      "bar_order": 9,
+      "render": {
+        "mesh": "weapon_fthrower.v3m",
+        "yaw": 4.7124,
+        "pitch": -0.05,
+        "zoom": 0.95,
+        "rotate_ccw": 0
+      }
+    },
+    {
+      "icon": "sniper_rifle",
+      "tbl_name": "Sniper Rifle",
+      "tbl_index": 6,
+      "display_name": "Sniper Rifle",
+      "display_xstr": 307,
+      "ammo_icon": "ammo_sniper_rifle",
+      "wheel_group": 6,
+      "bar_order": 10,
+      "render": {
+        "mesh": "Weapon_SniperRifle.v3m",
+        "yaw": 4.7124,
+        "pitch": -0.05,
+        "zoom": 0.95,
+        "rotate_ccw": 0
+      }
+    },
+    {
+      "icon": "rail_driver",
+      "tbl_name": "rail_gun",
+      "tbl_index": 14,
+      "display_name": "Rail Driver",
+      "display_xstr": 322,
+      "ammo_icon": "ammo_rail_driver",
+      "wheel_group": 6,
+      "bar_order": 11,
+      "render": {
+        "mesh": "weapon_railrifle.v3m",
+        "yaw": 4.7124,
+        "pitch": -0.05,
+        "zoom": 0.95,
+        "rotate_ccw": 0
+      }
+    },
+    {
+      "icon": "rocket_launcher",
+      "tbl_name": "Rocket Launcher",
+      "tbl_index": 7,
+      "display_name": "Rocket Launcher",
+      "display_xstr": 309,
+      "ammo_icon": "ammo_rocket_launcher",
+      "wheel_group": 7,
+      "bar_order": 12,
+      "render": {
+        "mesh": "Weapon_RocketLauncher.v3m",
+        "yaw": 4.7124,
+        "pitch": -0.05,
+        "zoom": 0.95,
+        "rotate_ccw": 0
+      }
+    },
+    {
+      "icon": "fusion_rocket_launcher",
+      "tbl_name": "shoulder_cannon",
+      "tbl_index": 17,
+      "display_name": "Fusion Rocket Launcher",
+      "display_xstr": 328,
+      "ammo_icon": "ammo_fusion_rocket_launcher",
+      "wheel_group": 7,
+      "bar_order": 13,
+      "render": {
+        "mesh": "Weapon_shoulder.v3m",
+        "yaw": 1.5708,
+        "pitch": -0.05,
+        "zoom": 0.95,
+        "rotate_ccw": 90
+      }
+    },
+    {
+      "icon": "grenade",
+      "tbl_name": "Grenade",
+      "tbl_index": 11,
+      "display_name": "Grenade",
+      "display_xstr": 315,
+      "ammo_icon": null,
+      "wheel_group": 8,
+      "bar_order": 14,
+      "render": {
+        "mesh": "Item_Grenade_ammo.v3m",
+        "yaw": 3.94,
+        "pitch": -0.42,
+        "zoom": 0.95,
+        "rotate_ccw": 0
+      }
+    },
+    {
+      "icon": "remote_charge",
+      "tbl_name": "Remote Charge",
+      "tbl_index": 0,
+      "display_name": "Remote Charge",
+      "display_xstr": 296,
+      "ammo_icon": "ammo_remote_charge",
+      "wheel_group": 8,
+      "bar_order": 15,
+      "render": {
+        "mesh": "rmt_explosive.v3m",
+        "yaw": 0.8,
+        "pitch": -0.42,
+        "zoom": 0.95,
+        "rotate_ccw": 0
+      }
+    }
+  ],
+  "ammo": [
+    "ammo_12mm_handgun",
+    "ammo_assault_rifle",
+    "ammo_heavy_machine_gun",
+    "ammo_precision_rifle",
+    "ammo_shotgun",
+    "ammo_sniper_rifle",
+    "ammo_flamethrower",
+    "ammo_rocket_launcher",
+    "ammo_rail_driver",
+    "ammo_riot_stick",
+    "ammo_remote_charge",
+    "ammo_fusion_rocket_launcher"
+  ],
+  "gear": [
+    "armor",
+    "armor_box",
+    "att_mag",
+    "att_muzzle",
+    "att_optic",
+    "backpack_large",
+    "backpack_medium",
+    "backpack_small",
+    "health_shot",
+    "jetpack_assault",
+    "jetpack_lift",
+    "jetpack_nano",
+    "jetpack_survey",
+    "loot_document",
+    "loot_material",
+    "loot_medical",
+    "loot_part",
+    "loot_supply",
+    "loot_valuable",
+    "medkit",
+    "mission",
+    "munitions_box",
+    "revive"
+  ]
+}
